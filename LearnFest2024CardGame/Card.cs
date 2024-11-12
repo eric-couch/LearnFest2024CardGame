@@ -19,6 +19,13 @@ public class Card
         this.suit = suit;
         this.value = value;
         this.rank = rank;
+        if (suit == "♥" || suit == "♦")
+        {
+            this.color = "red";
+        } else
+        {
+            this.color = "black";
+        }
     }
 
     public override string? ToString()
